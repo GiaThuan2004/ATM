@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thuan</title>
+    <link rel="stylesheet" href="./forget.css">
+</head>
+<body>
+   
+    <div class="container">
+        <img src="logo.png.png">
+        <h1>PLEASE ENTER YOUR CARD INFORMATION TO GET THE NEW CVV</h1>
+        <form>
+            
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber"  required maxlength="16" pattern="\d{16}">
+            
+            <label for="cardHolder">Card Holder:</label>
+            <input type="text" id="cardHolder" required maxlength="30">
+            <div class="expiration-fields">
+                <div>
+                    <label for="expirationMM">EXPIRATION MM:</label>
+                    <input type="text" id="expirationMM" class="expiration-mm" required maxlength="2" pattern="\d{2}" title="Please enter a valid 2-digit month (01-12).">
+                </div>
+
+                <div>
+                    <label for="expirationYY">EXPIRATION YY:</label>
+                    <input type="text" id="expirationYY" class="expiration-yy" required maxlength="4" pattern="\d{4}" title="Please enter a valid 2-digit year.">
+                </div>
+            <button type="submit">CONFIRM</button>
+            <!-- Khung hiển thị CVV -->
+            <div id="cvvModal" class="cvv-modal" style="display: none;">
+                <div class="cvv-content">
+                    <span id="cvvClose" class="cvv-close">&times;</span>
+                    <h2>Your CVV is: <span id="cvvNumber"></span></h2>
+                </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    </form>
+</body>
+</html>

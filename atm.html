@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atm.css"> 
+</head>
+<body>
+
+    <div class="atm-container">
+        <div class="top-section">
+            <img src="logo.png.png" alt="Logo" class="logo" />
+        </div>
+
+        <div class="mid-section">
+            <div class="left-container">
+                <div class="amount-input">
+                    <label for="amount"></label>
+                    <input type="text" id="amount" placeholder="Enter money here" />
+
+                </div>
+                <div class="balance-container"></div>
+                <div class="balance-content">
+                    <span class="hidden-balance">********</span> 
+                    <img src="atm2.png" alt="Logo" class="logo atm" onclick="toggleBalance()" />
+                </div>
+                <div class="atm-actions">
+                    <button class="btn withdraw">Withdraw</button>
+                    <button class="btn deposit">Top Up</button>
+                    <button class="btn enter">Enter</button>
+                </div>
+            </div>
+
+            <div class="atm-keypad">
+                <div class="keypad-buttons">
+                    <button class="key">1</button>
+                    <button class="key">2</button>
+                    <button class="key">3</button>
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+                    <button class="key">7</button>
+                    <button class="key">8</button>
+                    <button class="key">9</button>
+                    <button class="key grid-0">0</button>
+                    <button class="key clear grid-clear">C</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bot-section">
+            <div class="back-container">
+                <button class="btn back">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="atm.js"></script>
+</body>
+</html>

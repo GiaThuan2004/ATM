@@ -1,0 +1,103 @@
+#container {
+    display: flex;
+    width: 100%;
+    background-color: #F8CBF2;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.left-column {
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.right-column {
+    background-color: transparent;
+}
+
+img {
+    padding: 30px;
+    width: 600px;
+    height: 600px;
+}
+
+.form-group,.fill-card-id {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+.form-control {
+    display: block;
+    /* margin-bottom: 30px; */
+}
+
+.form-group input {
+    width: 240px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.fill-card-id input {
+    width: 530px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.expiration-date {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.exp-mm, .exp-yy {
+    width: 240px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.cvv {
+    margin-bottom: 30px;
+}
+
+.cvv-input {
+    width: 530px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.confirm-button {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.confirm-button button {
+    width: 530px;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button button:hover {
+    background-color : #be49a9;
+}

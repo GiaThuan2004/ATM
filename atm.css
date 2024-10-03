@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#A68ED2, #F274E1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.atm-container {
+    flex: 1; 
+} 
+
+.top-section {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    /* padding: 30px; */
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; 
+}
+
+.mid-section {
+    flex: 2; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 370px; 
+    margin-top: 100px;
+}
+
+.atm-keypad {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;
+    margin-right: 300px; 
+        
+}
+
+.keypad-buttons {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 3 cột cho các nút số */
+    gap: 10px; 
+}
+
+.key {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key:hover {
+    background-color: #ccc;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 23px;
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 135px; 
+    height: 70px; 
+}
+
+.btn:hover {
+    background-color: #ccc; 
+}
+
+.amount-input {
+    margin-bottom: 100px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.amount-input label {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 0px;   
+}
+
+.amount-input input {
+    width: 450px;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 20px; 
+    background-color: #4591ed; 
+}
+.bot-section {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px; 
+    width: 100px;
+    height: 100px;
+}
+
+.back-container {
+    position: fixed; 
+    bottom: 20px; 
+}
+
+.btn.back {
+    background-color: #f2f2f2; 
+    padding: 10px 20px;
+    font-size: 18px; 
+}
+
+.btn.back:hover {
+    background-color:#CCC; 
+}
+.amount-input {
+    margin-bottom: 5px; 
+}
+
+.balance-container {
+    margin-top: 5px; 
+}
+
+.balance-content {
+    display: flex; 
+    align-items: center; 
+}
+
+.balance-container {
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+.hidden-balance {
+    font-size: 30px; 
+    color: black; 
+    margin-right: 10px; 
+    margin-left: 300px;
+}
+
+.logo.atm {
+    cursor: pointer; 
+    width: 50px; 
+    height: 50px; 
+}
